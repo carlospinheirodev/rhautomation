@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: rh-automation
+  env: python
+  buildCommand: pipinstall -r requirements.txt
+  startCommand: gunicorn app:app
